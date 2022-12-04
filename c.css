@@ -1,0 +1,66 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height:100vh;
+}
+.container .inputs{
+    display:flex;
+    flex-direction: row;
+    gap:30px;
+}
+.container .inputs .addTask{
+padding:8px;
+outline: none;
+border:1px solid black;
+border-radius: 5px;
+}
+.container .taskButton{
+padding:8px;
+outline: none;
+border:1px solid black;
+border-radius: 5px;
+background-color: rgb(8, 121, 36);
+color: white;
+cursor: pointer;
+width: 190px;
+}
+.container .taskButton:hover{
+    transition: 1s;
+    width:200px;
+}
+.container .task{
+    border:1px ;
+    border-radius: 8px;
+    display:flex;
+    flex-direction: column;
+    width:190px;
+    gap:30px;
+    position: relative;
+    /* background-color: royalblue; */
+}
+.container .task h3{
+    position: absolute;
+    left: 5px;
+    top:2px;
+    color: black;
+}
+.container .task .btn{
+    background-color: red;
+    color:white;
+    outline: none;
+    border:none;
+    border-radius: 10px;
+    height:20px;
+    width: 20px;
+    position: absolute;
+    right: 5px;
+    top:4px;
+}
